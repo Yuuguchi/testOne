@@ -1,7 +1,7 @@
 fun main() {
-    var valstring = "AAADSSSRRTTHAAAA"
-    var countchar = 1;
-    var prevChar = valstring[0];
+    var valstring = readln()
+    var countchar = 1
+    var prevChar = valstring[0]
     var result = ""
     for (i in 1 .. valstring.length -1) {
         if(prevChar == valstring[i]){
@@ -21,7 +21,7 @@ fun main() {
         result = result + prevChar + "$countchar"
     }
     else {
-        result =result + prevChar
+        result = result + prevChar
     }
 
     println(result)
